@@ -16,12 +16,7 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket:
-  ticket_id: "E11-003"
-  openproject_id: 47
-  title: "Composants UI de base"
-  branch: "feature/47-e11-003"
-  started_at: "2025-12-17T04:00:00"
+current_ticket: null
 
 # Préférences Claude Code
 claude_preferences:
@@ -34,6 +29,11 @@ claude_preferences:
 
 # Historique des tickets terminés
 history:
+  - ticket_id: "E11-003"
+    openproject_id: 47
+    title: "Composants UI de base"
+    completed_at: "2025-12-17"
+    pr_url: "https://github.com/Adnamr/sport-saas/pull/9"
   - ticket_id: "E11-002"
     openproject_id: 39
     title: "Design System - Tokens CSS"
