@@ -16,12 +16,7 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket:
-  ticket_id: "E12-001"
-  openproject_id: 40
-  title: "Dockerfile Backend"
-  branch: "feature/40-e12-001"
-  started_at: "2025-12-17T10:00:00"
+current_ticket: null
 
 # Préférences Claude Code
 claude_preferences:
@@ -34,6 +29,11 @@ claude_preferences:
 
 # Historique des tickets terminés
 history:
+  - ticket_id: "E12-001"
+    openproject_id: 40
+    title: "Dockerfile Backend"
+    completed_at: "2025-12-17"
+    pr_url: "https://github.com/Adnamr/sport-saas/pull/3"
   - ticket_id: "E11-001"
     openproject_id: 38
     title: "Setup projet Angular"
