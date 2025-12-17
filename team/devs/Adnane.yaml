@@ -16,7 +16,12 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket: null
+current_ticket:
+  ticket_id: "E2-005"
+  openproject_id: 49
+  title: "BaseEntity avec tenant_id"
+  branch: "feature/49-e2-005"
+  started_at: "2025-12-17T14:00:00"
 
 # Préférences Claude Code
 claude_preferences:
