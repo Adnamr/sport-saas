@@ -16,7 +16,12 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket: null
+current_ticket:
+  ticket_id: "E12-001"
+  openproject_id: 40
+  title: "Dockerfile Backend"
+  branch: "feature/40-e12-001"
+  started_at: "2025-12-17T10:00:00"
 
 # Préférences Claude Code
 claude_preferences:
