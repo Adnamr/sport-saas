@@ -45,6 +45,7 @@
         <springdoc.version>2.3.0</springdoc.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <lombok.version>1.18.30</lombok.version>
+        <flyway.version>9.22.3</flyway.version>
     </properties>
 
     <dependencyManagement>
