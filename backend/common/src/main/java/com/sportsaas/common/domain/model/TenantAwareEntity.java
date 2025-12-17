@@ -1,16 +1,10 @@
 package com.sportsaas.common.domain.model;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.PrePersist;
-import jakarta.persistence.PreUpdate;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
@@ -18,33 +12,15 @@ import java.util.UUID;
  *
  * <p>Toutes les entités du projet DOIVENT hériter de cette classe
  * pour assurer l'isolation des données par tenant.</p>
+ *
+ * <p>Hérite de {@link BaseEntity} pour les champs communs (id, createdAt, updatedAt)
+ * et ajoute le tenant_id obligatoire.</p>
  */
 @MappedSuperclass
 @Getter
 @Setter
-public abstract class TenantAwareEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+public abstract class TenantAwareEntity extends BaseEntity {
 
     @Column(name = "tenant_id", nullable = false)
     private UUID tenantId;
-
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime createdAt;
-
-    @Column(name = "updated_at", nullable = false)
-    private LocalDateTime updatedAt;
-
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-        this.updatedAt = LocalDateTime.now();
-    }
-
-    @PreUpdate
-    protected void onUpdate() {
-        this.updatedAt = LocalDateTime.now();
-    }
 }
