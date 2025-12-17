@@ -1,0 +1,40 @@
+<div class="home-container">
+  <h2>Bienvenue sur Sport SaaS</h2>
+  <p class="subtitle">Plateforme multi-tenant de gestion de matériels sportifs</p>
+
+  <div class="status-card">
+    <h3>État du Backend</h3>
+
+    <div *ngIf="loading" class="loading">
+      Vérification...
+    </div>
+
+    <div *ngIf="!loading && apiStatus" class="status success">
+      <span class="icon">✓</span>
+      <div>
+        <strong>{{ apiStatus.name }}</strong>
+        <p>Version: {{ apiStatus.version }}</p>
+        <p>Status: {{ apiStatus.status }}</p>
+      </div>
+    </div>
+
+    <div *ngIf="!loading && error" class="status error">
+      <span class="icon">✗</span>
+      <div>
+        <strong>{{ error }}</strong>
+        <p>Assurez-vous que le backend est démarré sur le port 8080</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <h3>Fonctionnalités</h3>
+    <ul>
+      <li>Gestion multi-tenant</li>
+      <li>Catalogue de produits</li>
+      <li>Gestion des stocks</li>
+      <li>Commandes et locations</li>
+      <li>Facturation</li>
+    </ul>
+  </div>
+</div>
