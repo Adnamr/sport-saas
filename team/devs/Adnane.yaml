@@ -16,12 +16,7 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket:
-  ticket_id: "E2-002"
-  openproject_id: 51
-  title: "TenantContext et ThreadLocal"
-  branch: "feature/51-e2-002"
-  started_at: "2025-12-17"
+current_ticket: null
 
 # Préférences Claude Code
 claude_preferences:
@@ -34,6 +29,11 @@ claude_preferences:
 
 # Historique des tickets terminés
 history:
+  - ticket_id: "E2-002"
+    openproject_id: 51
+    title: "TenantContext et ThreadLocal"
+    completed_at: "2025-12-17"
+    pr_url: "https://github.com/Adnamr/sport-saas/pull/13"
   - ticket_id: "E2-006"
     openproject_id: 52
     title: "Service TenantService"
