@@ -1,0 +1,19 @@
+<aside class="sidebar" [class.sidebar-collapsed]="!isOpen">
+  <nav class="sidebar-nav">
+    <ul class="nav-list">
+      <li *ngFor="let item of navItems" class="nav-item">
+        <a [routerLink]="item.route" routerLinkActive="nav-link-active" class="nav-link">
+          <span class="nav-icon">{{ item.icon }}</span>
+          <span class="nav-label" *ngIf="isOpen">{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-footer" *ngIf="isOpen">
+    <div class="tenant-info">
+      <span class="tenant-icon">🏢</span>
+      <span class="tenant-name">Mon Organisation</span>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,22 @@
+.layout {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.layout-main {
+  margin-left: 260px;
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  transition: margin-left var(--transition-base);
+}
+
+.layout-main-expanded {
+  margin-left: 64px;
+}
+
+.layout-content {
+  flex: 1;
+  padding: var(--spacing-6);
+}
