@@ -16,12 +16,7 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket:
-  ticket_id: "E1-005"
-  openproject_id: 43
-  title: "Configuration OpenAPI / Swagger"
-  branch: "feature/43-e1-005"
-  started_at: "2025-12-17T13:00:00"
+current_ticket: null
 
 # Préférences Claude Code
 claude_preferences:
@@ -34,6 +29,11 @@ claude_preferences:
 
 # Historique des tickets terminés
 history:
+  - ticket_id: "E1-005"
+    openproject_id: 43
+    title: "Configuration OpenAPI / Swagger"
+    completed_at: "2025-12-17"
+    pr_url: "https://github.com/Adnamr/sport-saas/pull/6"
   - ticket_id: "E1-002"
     openproject_id: 41
     title: "PostgreSQL et Flyway"
