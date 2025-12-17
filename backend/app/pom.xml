@@ -55,6 +55,12 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
+        <!-- OpenAPI / Swagger -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        </dependency>
+
         <!-- DevTools (dev only) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
