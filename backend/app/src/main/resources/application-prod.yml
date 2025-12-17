@@ -1,0 +1,28 @@
+# ═══════════════════════════════════════════════════════════════════
+#                    PROFIL PRODUCTION
+# ═══════════════════════════════════════════════════════════════════
+
+spring:
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+
+# Logging
+logging:
+  level:
+    root: WARN
+    com.sportsaas: INFO
+    org.springframework.web: WARN
+    org.hibernate.SQL: WARN
+
+# Actuator - Restrictif en prod
+management:
+  endpoint:
+    health:
+      show-details: when_authorized
+  endpoints:
+    web:
+      exposure:
+        include: health,info

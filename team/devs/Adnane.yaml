@@ -1,0 +1,35 @@
+# 👤 Fichier Développeur - Adnane
+# Généré le 2025-12-17
+
+dev:
+  id: "Adnane"
+  name: "Adnane Amraoui"
+  email: "adnane.amraoui@outlook.fr"
+  slack: "@adnane"
+  role: "Développeur"
+  joined_at: "2025-12-17"
+
+  access:
+    github: true
+    openproject: true
+    slack: true
+    server_dev: false
+
+current_ticket:
+  ticket_id: "E1-001"
+  openproject_id: 37
+  title: "Setup Spring Boot"
+  branch: "feature/1-e1-001"
+  started_at: "2025-12-17T12:00:00"
+
+# Préférences Claude Code
+claude_preferences:
+  explanation_level: "normal"
+  auto_generate_tests: true
+  code_style:
+    use_lombok: true
+    use_records_for_dto: true
+    max_line_length: 120
+
+# Historique des tickets terminés
+history: []
