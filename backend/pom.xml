@@ -21,9 +21,9 @@
 
     <modules>
         <module>common</module>
+        <module>tenant</module>
         <!-- Modules à créer dans les prochains tickets -->
         <!--<module>config</module>-->
-        <!--<module>tenant</module>-->
         <!--<module>auth</module>-->
         <!--<module>catalog</module>-->
         <!--<module>inventory</module>-->
