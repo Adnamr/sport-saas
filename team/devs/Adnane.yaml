@@ -16,7 +16,12 @@ dev:
     server_dev: false
 
 # Ticket en cours
-current_ticket: null
+current_ticket:
+  ticket_id: "E2-006"
+  openproject_id: 52
+  title: "Service TenantService"
+  branch: "feature/52-e2-006"
+  started_at: "2025-12-17"
 
 # Préférences Claude Code
 claude_preferences:
