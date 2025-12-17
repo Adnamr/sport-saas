@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header-left">
+    <button class="header-toggle" (click)="onToggleSidebar()" aria-label="Toggle sidebar">
+      <span class="toggle-icon">☰</span>
+    </button>
+    <div class="header-brand">
+      <span class="brand-icon">⚽</span>
+      <span class="brand-name">{{ appName }}</span>
+    </div>
+  </div>
+
+  <div class="header-center">
+    <div class="header-search">
+      <input type="search" placeholder="Rechercher..." class="search-input" />
+    </div>
+  </div>
+
+  <div class="header-right">
+    <button class="header-icon-btn" aria-label="Notifications">
+      <span>🔔</span>
+    </button>
+    <div class="header-user">
+      <div class="user-avatar">U</div>
+      <span class="user-name">Utilisateur</span>
+    </div>
+  </div>
+</header>

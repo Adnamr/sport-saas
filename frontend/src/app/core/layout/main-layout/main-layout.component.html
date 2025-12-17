@@ -1,0 +1,15 @@
+<div class="layout">
+  <app-header
+    [sidebarOpen]="sidebarOpen"
+    (toggleSidebar)="toggleSidebar()"
+  ></app-header>
+
+  <app-sidebar [isOpen]="sidebarOpen"></app-sidebar>
+
+  <main class="layout-main" [class.layout-main-expanded]="!sidebarOpen">
+    <div class="layout-content">
+      <ng-content></ng-content>
+    </div>
+    <app-footer></app-footer>
+  </main>
+</div>
