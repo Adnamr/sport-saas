@@ -3,8 +3,25 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+// Components
+import { ButtonComponent } from './components/button/button.component';
+import { CardComponent } from './components/card/card.component';
+import { InputComponent } from './components/input/input.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+
+const COMPONENTS = [
+  ButtonComponent,
+  CardComponent,
+  InputComponent,
+  AlertComponent,
+  ModalComponent,
+  SpinnerComponent
+];
+
 @NgModule({
-  declarations: [],
+  declarations: [...COMPONENTS],
   imports: [
     CommonModule,
     FormsModule,
@@ -15,7 +32,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    ...COMPONENTS
   ]
 })
 export class SharedModule {}
